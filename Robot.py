@@ -22,8 +22,8 @@ class Robot(Entity):
         # increment game turn
         game.turn += 1
 
-        # choose a random position (int between 1-9)
-        space = int(random.randrange(1, 10, 1))
+        # choose a random position (int between 1-25)
+        space = int(random.randrange(1, 26, 1))
 
         # get the corresponding row and col values
         row = board.rowFromPosition(space)
@@ -32,8 +32,8 @@ class Robot(Entity):
         # if the spot is already taken continue looping
         # until a valid (empty) position is chosen
         while(board.get(row, col) != Chess.empty):
-            # choose a random position (int between 1-9)
-            space = int(random.randrange(1, 10, 1))
+            # choose a random position (int between 1-25)
+            space = int(random.randrange(1, 26, 1))
 
             # get the corresponding row and col values
             row = board.rowFromPosition(space)

@@ -30,8 +30,8 @@ class Entity():
             space = int(input("Which position would you like to choose? "))
 
             # if an incorrent int entered, loop until valid position given
-            while space > 9 or space < 1:
-                print("I'm sorry, that's not a valid position. Please select a space between 1 and 9.\n")
+            while space > 25 or space < 1:
+                print("I'm sorry, that's not a valid position. Please select a space between 1 and 25.\n")
                 space = int(input("Which position would you like to choose? "))
 
             # return position value
@@ -39,7 +39,7 @@ class Entity():
         # catch ValueError - something other than int entered
         except ValueError:
             # print error message and return 0
-            print("I'm sorry, that's not a valid position. Please select a space between 1 and 9.\n")
+            print("I'm sorry, that's not a valid position. Please select a space between 1 and 25.\n")
             return 0
 
     # method to define turn logic for human player
@@ -52,7 +52,7 @@ class Entity():
 
         # loop until a valid position (1-9) is given
         # obtained by beToldPosition() method
-        while space > 9 or space < 1:
+        while space > 25 or space < 1:
             space = self.beToldPosition()
 
         # get the corresponding row and col values
@@ -70,7 +70,7 @@ class Entity():
 
             # loop until a valid position (1-9) is given
             # obtained by beToldPosition() method
-            while space > 9 or space < 1:
+            while space > 25 or space < 1:
                 space = self.beToldPosition()
 
             # get the corresponding row and col values

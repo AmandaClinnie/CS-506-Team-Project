@@ -37,9 +37,11 @@ class Game():
 
         # print the position values for reference
         print("\nFor reference, the board spaces are numbered as follows:")
-        print("row1 [ 1, 2, 3]")
-        print("row2 [ 4, 5, 6]")
-        print("row3 [ 7, 8, 9]")
+        print("row1 [  1,  2,  3,  4,  5]")
+        print("row2 [  6,  7,  8,  9, 10]")
+        print("row3 [ 11, 12, 13, 14, 15]")
+        print("row4 [ 16, 17, 18, 19, 20]")
+        print("row5 [ 21, 22, 23, 24, 25]")
 
         # initialize a new game board
         print("\nCreating an empty board now...")
